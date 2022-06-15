@@ -1,0 +1,71 @@
+:root {
+    --var--colorWhite: hsl(0, 0%, 100%);
+    --var--colorLightgray: hsl(212, 45%, 89%);
+    --var--colorGrayishblue: hsl(220, 15%, 55%);
+    --var--Darkblue: hsl(218, 44%, 22%);
+}
+
+html {
+    background-color: var(--var--colorLightgray);   
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.qr__code-title-h2 {
+    font-size: 26px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--var--Darkblue);
+    font-weight: 700;
+}
+
+.d-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.qr__code {
+    width: 400px;
+    flex-direction: column;
+    border: 20px solid var(--var--colorWhite);
+    border-radius: 25px;
+    background-color: var(--var--colorWhite);
+    transition: all 400ms ease-in-out;
+}
+
+.qr__code:hover {
+    transform: scale(1.1);
+    transition: all 400ms ease-in-out;
+}
+
+.qr__code-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.qr__code-text-box {
+    background-color: var(--var--colorWhite);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.qr__code-p {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+    .qr__code {
+        width: 100%;
+    }
+}
